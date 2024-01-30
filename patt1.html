@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Tailwind CSS Odd/Even Table</title>
+  <style>
+    /* Apply alternating row background colors */
+    tr:nth-child(even) {
+      background-color: #c41a1a;
+      animation: evenRowAnimation 1s ease-in-out infinite alternate;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #259c75;
+      animation: oddRowAnimation 1s ease-in-out infinite alternate;
+    }
+
+    /* Apply alternating column text colors */
+    tr td:nth-child(even) {
+      color: #3498db;
+      animation: evenColumnAnimation 1s ease-in-out infinite alternate;
+    }
+
+    tr td:nth-child(odd) {
+      color: #e74c3c;
+      animation: oddColumnAnimation 1s ease-in-out infinite alternate;
+    }
+
+    @keyframes evenRowAnimation {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(10px); }
+    }
+
+    @keyframes oddRowAnimation {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-10px); }
+    }
+
+    @keyframes evenColumnAnimation {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(5px); }
+    }
+
+    @keyframes oddColumnAnimation {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-5px); }
+    }
+  </style>
+</head>
+<body class="bg-gray-300 flex">
+    <table class="min-w-full bg-white border border-gray-300">
+        <tr>
+                <td class="border border-2 border-solid border-black bg-white h-16 w-16">
+                  <img class="pattern h-32 w-32 p-4" src="pat2.png">
+    
+                </td>
+                <td class="border border-2 border-solid border-gray-500 bg-black  h-16 w-16 ">
+                  <img class="pattern h-32 w-32 p-4 ml-2" src="pat3.png">
+    
+                </td>
+                <td class="border border-2 border-solid border-black bg-white h-16 w-16">
+                  <img class="pattern h-32 w-32 p-4" src="pat2.png">
+    
+                </td>
+                <td class="border border-2 border-solid border-gray-500 bg-black  h-16 w-16 ">
+                  <img class="pattern h-32 w-32 p-4 ml-2" src="pat3.png">
+    
+                </td>
+                <td class="border border-2 border-solid border-black bg-white h-16 w-16">
+                  <img class="pattern h-32 w-32 p-4" src="pat2.png">
+    
+                </td>
+                <td class="border border-2 border-solid border-gray-500 bg-black  h-16 w-16 ">
+                  <img class="pattern h-32 w-32 p-4 ml-2" src="pat3.png">
+    
+                </td>
+                <td class="border border-2 border-solid border-black bg-white h-16 w-16">
+                  <img class="pattern h-32 w-32 p-4" src="pat2.png">
+    
+                </td>
+                <td class="border border-2 border-solid border-gray-500 bg-black  h-16 w-16 ">
+                  <img class="pattern h-32 w-32 p-4 ml-2" src="pat3.png">
+    
+                </td>
+                <td class="border border-2 border-solid border-black bg-white h-16 w-16">
+                  <img class="pattern h-32 w-32 p-4" src="pat2.png">
+    
+                </td>
+                <td class="border border-2 border-solid border-gray-500 bg-black  h-16 w-16 ">
+                  <img class="pattern h-32 w-32 p-4 ml-2" src="pat3.png">
+    
+                </td>
+                <tr>
+                  <td class="border border-2 border-solid border-black bg-white h-16 w-16">
+                    <img class="pattern h-32 w-32 p-4" src="pat4.png">
+      
+                  </td>
+                  <td class="border border-2 border-solid border-gray-500 bg-black  h-16 w-16 ">
+                    <img class="pattern h-32 w-32 p-4 ml-2" src="pat6.png">
+      
+                  </td>
+                  <td class="border border-2 border-solid border-black bg-white h-16 w-16">
+                    <img class="pattern h-32 w-32 p-4" src="pat4.png">
+      
+                  </td>
+                  <td class="border border-2 border-solid border-gray-500 bg-black  h-16 w-16 ">
+                    <img class="pattern h-32 w-32 p-4 ml-2" src="pat6.png">
+      
+                  </td>
+                  <td class="border border-2 border-solid border-black bg-white h-16 w-16">
+                    <img class="pattern h-32 w-32 p-4" src="pat2.png">
+      
+                  </td>
+                  <td class="border border-2 border-solid border-gray-500 bg-black  h-16 w-16 ">
+                    <img class="pattern h-32 w-32 p-4" src="pat4.png">
+      
+                  </td>
+                  <td class="border border-2 border-solid border-black bg-white h-16 w-16">
+                    <img class="pattern h-32 w-32 p-4" src="pat6.png">
+      
+                  </td>
+                  <td class="border border-2 border-solid border-gray-500 bg-black  h-16 w-16 ">
+                    <img class="pattern h-32 w-32 p-4 ml-2" src="pat4.png">
+      
+                  </td>
+                  <td class="border border-2 border-solid border-black bg-white h-16 w-16">
+                    <img class="pattern h-32 w-32 p-4" src="pat6.png">
+      
+                  </td>
+                  <td class="border border-2 border-solid border-gray-500 bg-black  h-16 w-16 ">
+                    <img class="pattern h-32 w-32 p-4 ml-2" src="pat4.png">
+      
+                  </td>
+                </tr>
+                <td class="border border-2 border-solid border-black bg-white h-16 w-16">
+                  <img class="pattern h-32 w-32 p-4" src="pat2.png">
+    
+                </td>
+                <td class="border border-2 border-solid border-gray-500 bg-black  h-16 w-16 ">
+                  <img class="pattern h-32 w-32 p-4 ml-2" src="pat3.png">
+    
+                </td>
+                <td class="border border-2 border-solid border-black bg-white h-16 w-16">
+                  <img class="pattern h-32 w-32 p-4" src="pat2.png">
+    
+                </td>
+                <td class="border border-2 border-solid border-gray-500 bg-black  h-16 w-16 ">
+                  <img class="pattern h-32 w-32 p-4 ml-2" src="pat3.png">
+    
+                </td>
+                <td class="border border-2 border-solid border-black bg-white h-16 w-16">
+                  <img class="pattern h-32 w-32 p-4" src="pat2.png">
+    
+                </td>
+                <td class="border border-2 border-solid border-gray-500 bg-black  h-16 w-16 ">
+                  <img class="pattern h-32 w-32 p-4 ml-2" src="pat3.png">
+    
+                </td>
+                <td class="border border-2 border-solid border-black bg-white h-16 w-16">
+                  <img class="pattern h-32 w-32 p-4" src="pat2.png">
+    
+                </td>
+                <td class="border border-2 border-solid border-gray-500 bg-black  h-16 w-16 ">
+                  <img class="pattern h-32 w-32 p-4 ml-2" src="pat3.png">
+    
+                </td>
+                <td class="border border-2 border-solid border-black bg-white h-16 w-16">
+                  <img class="pattern h-32 w-32 p-4" src="pat2.png">
+    
+                </td>
+                <td class="border border-2 border-solid border-gray-500 bg-black  h-16 w-16 ">
+                  <img class="pattern h-32 w-32 p-4 ml-2" src="pat3.png">
+    
+                </td>
+                <tr>
+                  <td class="border border-2 border-solid border-black bg-white h-16 w-16">
+                    <img class="pattern h-32 w-32 p-4" src="pat4.png">
+      
+                  </td>
+                  <td class="border border-2 border-solid border-gray-500 bg-black  h-16 w-16 ">
+                    <img class="pattern h-32 w-32 p-4 ml-2" src="pat6.png">
+      
+                  </td>
+                  <td class="border border-2 border-solid border-black bg-white h-16 w-16">
+                    <img class="pattern h-32 w-32 p-4" src="pat4.png">
+      
+                  </td>
+                  <td class="border border-2 border-solid border-gray-500 bg-black  h-16 w-16 ">
+                    <img class="pattern h-32 w-32 p-4 ml-2" src="pat6.png">
+      
+                  </td>
+                  <td class="border border-2 border-solid border-black bg-white h-16 w-16">
+                    <img class="pattern h-32 w-32 p-4" src="pat2.png">
+      
+                  </td>
+                  <td class="border border-2 border-solid border-gray-500 bg-black  h-16 w-16 ">
+                    <img class="pattern h-32 w-32 p-4" src="pat4.png">
+      
+                  </td>
+                  <td class="border border-2 border-solid border-black bg-white h-16 w-16">
+                    <img class="pattern h-32 w-32 p-4" src="pat6.png">
+      
+                  </td>
+                  <td class="border border-2 border-solid border-gray-500 bg-black  h-16 w-16 ">
+                    <img class="pattern h-32 w-32 p-4 ml-2" src="pat4.png">
+      
+                  </td>
+                  <td class="border border-2 border-solid border-black bg-white h-16 w-16">
+                    <img class="pattern h-32 w-32 p-4" src="pat6.png">
+      
+                  </td>
+                  <td class="border border-2 border-solid border-gray-500 bg-black  h-16 w-16 ">
+                    <img class="pattern h-32 w-32 p-4 ml-2" src="pat4.png">
+      
+                  </td>
+                </tr>
+                <td class="border border-2 border-solid border-black bg-white h-16 w-16">
+                  <img class="pattern h-32 w-32 p-4" src="pat2.png">
+    
+                </td>
+                <td class="border border-2 border-solid border-gray-500 bg-black  h-16 w-16 ">
+                  <img class="pattern h-32 w-32 p-4 ml-2" src="pat3.png">
+    
+                </td>
+                <td class="border border-2 border-solid border-black bg-white h-16 w-16">
+                  <img class="pattern h-32 w-32 p-4" src="pat2.png">
+    
+                </td>
+                <td class="border border-2 border-solid border-gray-500 bg-black  h-16 w-16 ">
+                  <img class="pattern h-32 w-32 p-4 ml-2" src="pat3.png">
+    
+                </td>
+                <td class="border border-2 border-solid border-black bg-white h-16 w-16">
+                  <img class="pattern h-32 w-32 p-4" src="pat2.png">
+    
+                </td>
+                <td class="border border-2 border-solid border-gray-500 bg-black  h-16 w-16 ">
+                  <img class="pattern h-32 w-32 p-4 ml-2" src="pat3.png">
+    
+                </td>
+                <td class="border border-2 border-solid border-black bg-white h-16 w-16">
+                  <img class="pattern h-32 w-32 p-4" src="pat2.png">
+    
+                </td>
+                <td class="border border-2 border-solid border-gray-500 bg-black  h-16 w-16 ">
+                  <img class="pattern h-32 w-32 p-4 ml-2" src="pat3.png">
+    
+                </td>
+                <td class="border border-2 border-solid border-black bg-white h-16 w-16">
+                  <img class="pattern h-32 w-32 p-4" src="pat2.png">
+    
+                </td>
+                <td class="border border-2 border-solid border-gray-500 bg-black  h-16 w-16 ">
+                  <img class="pattern h-32 w-32 p-4 ml-2" src="pat3.png">
+    
+                </td>
+                
+      
+     
+            
+        </table>
+</body>
+</html>

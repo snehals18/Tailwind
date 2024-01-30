@@ -1,0 +1,11 @@
+@tailwind base; 
+@tailwind components; 
+@tailwind utilities; 
+
+.gfg_center{ 
+	@apply flex justify-center items-center min-h-screen
+} 
+
+.p{ 
+	@apply bg-green-700 p-4 text-3xl text-white rounded-xl shadow-2xl 
+}

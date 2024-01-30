@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Responsive Navbar</title>
+</head>
+
+<body class="bg-sky-700">
+    <nav class="bg-blue-500 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <a class="text-black text-2xl font-bold">NAVBAR</a>
+            </div>
+
+            <div class="hidden md:flex flex-grow items-center justify-center space-x-4 dark:bg-white">
+                <a class="text-white" href="#">Home</a>
+                <a class="text-white" href="#">About</a>
+                <a class="text-white" href="#">Services</a>
+                <a class="text-white" href="#">Contact</a>
+            </div>
+
+            <div class="md:hidden">
+                <button id="burger-icon" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="md:hidden bg-indigo-400 p-4 hidden">
+        <ul class="space-y-2 color-white">
+            <li>Home</li>
+            <li>ABOUT</li>
+            <li>SERVICES</li>
+            <li>CONTACT</li>
+
+
+        </ul>
+        <div>
+            <button onclick="myFunction()">Toggle dark mode</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('burger-icon').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+<!-- 
+
+
+container: Applies some padding and centers the content.
+mx-auto: Horizontally centers the container within the page.
+flex: Enables Flexbox layout.
+justify-between: Positions the child elements at each end of the container, creating space in between.
+items-center: Centers the items along the vertical axis.
+Inside the navigation bar:
+
+<div>: This is a container for the logo. It contains an anchor (<a>) element with a class that styles it.
+
+<a class="text-white text-2xl font-bold" href="#">Logo</a>: This is a link styled as a white text with a font size of 2xl (extra large) and bold font weight. The href="#" is a placeholder link.
+<div class="hidden md:flex flex-grow items-center justify-center space-x-4">: This div contains the links in the navigation menu. It's initially hidden for small screens (hidden md:flex), but it's displayed for medium (md) and larger screens.
+
+flex: Enables Flexbox layout.
+flex-grow: Allows the container to grow and take up available space.
+items-center: Centers the items along the vertical axis.
+justify-center: Centers the items along the horizontal axis.
+space-x-4: Adds horizontal spacing between the items.
+<div class="md:hidden">: This div contains the burger menu icon. It's initially visible for small screens (md:hidden).
+
+<button id="burger-icon" class="text-white focus:outline-none">: This is a button element with a white color and the class focus:outline-none which removes the focus outline (used for accessibility).
+
+<svg>: This is an SVG (Scalable Vector Graphics) element used to display an icon. It's styled with w-6 (width) and h-6 (height).
+
+<path>: This element defines a path to create the burger icon. It uses SVG path commands to draw lines.
+<div id="mobile-menu" class="md:hidden bg-blue-500 p-4 hidden">: This is a container for the mobile menu. It's initially hidden for medium (md) and larger screens, but it's displayed for small screens.
+
+bg-blue-500: Sets the background color to blue.
+p-4: Adds padding.
+Inside this container, there are anchor (<a>) elements for each menu item.
+
+<script>: This section contains JavaScript code.
+
+document.getElementById('burger-icon').addEventListener('click', function() {...});: This code adds an event listener to the burger icon button. When clicked, it toggles the hidden class on the mobile menu, making it visible or hidden. -->
